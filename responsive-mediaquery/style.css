@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo {
+  display: flex;
+  gap: 10px;
+  background-color: green;
+  width: 25%;
+}
+header .logo-img {
+  background-color: blue;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+header .menus {
+  background-color: bisque;
+  width: 50%;
+  display: none;
+}
+header .button-drop {
+  background-color: chartreuse;
+  width: 25%;
+}
+.menu-mobile {
+  background-color: bisque;
+  text-align: center;
+}
+.desktop .section2 {
+  display: flex;
+  flex-direction: column;
+  background-color: cornflowerblue;
+  text-align: center;
+  align-items: center;
+}
+.s2img {
+  background-color: coral;
+  width: 75%;
+  height: 20px;
+  border-radius: 10px;
+}
+.desktop .section3 {
+  background-color: grey;
+  padding: 5px;
+}
+.s3title {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.s3title .title-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgreen;
+  width: 80%;
+  height: 20px;
+  border-radius: 5px;
+}
+.s3title .s3title-outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: orangered;
+  width: 35%;
+  height: 40px;
+  border-radius: 10px;
+}
+.section3 .s3d2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+}
+.s3d2 .s3d2img {
+  background-color: rgb(0, 255, 255);
+  width: 90%;
+  height: 50px;
+  border-radius: 5px;
+}
+.s3d2 p {
+  background-color: bisque;
+  border-radius: 5px;
+  width: 90%;
+}
+.s3d2 .description {
+  background-color: bisque;
+  border-radius: 5px;
+  width: 90%;
+}
+.s3settings {
+  background-color: gold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.s3settings p {
+  background-color: gray;
+}
+.s3settings .settings-buttons {
+  display: flex;
+  gap: 10px;
+}
+.setting-buttons p {
+  background-color: blue;
+}
+footer {
+  background-color: pink;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  header .menus {
+    background-color: bisque;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .menu-mobile {
+    display: none;
+  }
+  .section2 {
+    display: flex;
+    justify-content: space-around;
+    background-color: cornflowerblue;
+    text-align: center;
+  }
+  .s2img {
+    background-color: coral;
+    width: 25%;
+    height: 20px;
+    border-radius: 10px;
+  }
+  .section2 .links {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .section3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section3 .s3title {
+    align-self: center;
+    width: 40%;
+  }
+  .section3 .s3d2 {
+    width: 60%;
+  }
+  .section3 .s3settings {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .section3 .settings-toggle {
+  }
+  .section3 .s3settings .settings-buttons {
+    display: flex;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .f1 {
+    display: flex;
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .menu-mobile {
+    display: none;
+  }
+  header .menus {
+    background-color: bisque;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .desktop {
+    display: flex;
+  }
+  .desktop .section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: cornflowerblue;
+    text-align: center;
+    width: 25%;
+  }
+  .desktop .section3 {
+    display: flex;
+    background-color: darkcyan;
+    width: 75%;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 5px;
+  }
+  .section3 .s3title {
+    width: 20%;
+    align-self: center;
+  }
+  .section3 .s3d2 {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .section3 .s3d2img {
+    width: 50px;
+    height: 30px;
+    position: relative;
+    float: left;
+  }
+  .section3 .s3d2 p {
+  }
+  .section3 .s3settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 10px;
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .section3 .settings-toggle {
+    display: flex;
+    gap: 10px;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+  footer .f1 {
+    display: flex;
+    gap: 5px;
+  }
+}
