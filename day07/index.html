@@ -13,10 +13,10 @@
     />
   </head>
   <body class="">
-    <header class="sticky-top bg-secondary container-fluid">
-      <nav class="navbar navbar-expand-lg bg-secondary container">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Logo</a>
+    <header class="sticky-top bg-dark container-fluid">
+      <nav class="navbar navbar-expand-lg bg-dark container">
+        <div class="container-fluid d-lg-flex justify-content-between">
+          <a class="navbar-brand text-light" href="#">Logo</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -31,17 +31,22 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link text-light active"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link text-light" href="#">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link text-light" href="#">Pricing</a>
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle text-light"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -63,105 +68,115 @@
       </nav>
     </header>
     <main class="container-fluid">
-      <div class="row bg-secondary container mx-auto">
-        <div
-          class="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-around"
-        >
-          <h1>Better Solutions For Your Business</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
-            fugiat expedita amet corporis consequuntur illo ipsam hic cum
-            nostrum in?
-          </p>
-          <!-- Button trigger modal -->
-          <button
-            type="button"
-            class="btn btn-dark text-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            Get started
-          </button>
-
-          <!-- Modal -->
+      <div class="bg-dark container-fluid">
+        <div class="row bg-dark container mx-auto">
           <div
-            class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
+            class="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-around"
           >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">
-                    Enrollment
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <div class="mb-3">
-                    <label for="Firstname" class="form-label">First name</label>
-                    <input
-                      type="Firstname"
-                      class="form-control"
-                      id="firstname"
-                      placeholder=""
-                    />
+            <div class="d-flex d-md-wrap gap-3">
+              <h1 class="text-light">Better Solutions</h1>
+              <h1 class="text-warning">For Your Business</h1>
+            </div>
+
+            <p class="text-light">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Molestias fugiat expedita amet corporis consequuntur illo ipsam
+              hic cum nostrum in?
+            </p>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-dark text-primary border border-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Get started
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Enrollment
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
                   </div>
-                  <div class="mb-3">
-                    <label for="Lastname" class="form-label">Last Name</label>
-                    <input
-                      type="Lastname"
-                      class="form-control"
-                      id="lastname"
-                      placeholder=""
-                    />
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="Firstname" class="form-label"
+                        >First name</label
+                      >
+                      <input
+                        type="Firstname"
+                        class="form-control"
+                        id="firstname"
+                        placeholder=""
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="Lastname" class="form-label">Last Name</label>
+                      <input
+                        type="Lastname"
+                        class="form-control"
+                        id="lastname"
+                        placeholder=""
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder=""
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="phone" class="form-label" type="number"
+                        >Phone:</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="phone"
+                        placeholder=""
+                      />
+                    </div>
                   </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label"
-                      >Email address</label
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
                     >
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="exampleFormControlInput1"
-                      placeholder=""
-                    />
+                      Close
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
                   </div>
-                  <div class="mb-3">
-                    <label for="phone" class="form-label" type="number"
-                      >Phone:</label
-                    >
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="phone"
-                      placeholder=""
-                    />
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="d-none d-md-block col-md-6 d-lg-block col-lg-6">
-          <img src="./images/astro1.png" class="ratio ratio3x4" />
+          <div class="d-none d-md-block col-md-6 d-lg-block col-lg-6">
+            <img src="./images/astro1.png" class="ratio ratio3x4" />
+          </div>
         </div>
       </div>
       <div class="row">
@@ -204,7 +219,7 @@
         >
           <img src="./images/ppl1.png" width="300px" height="250px" />
         </div>
-        <div class="col-12 col-md-6 col-lg-6">
+        <div class="col-12 col-md-6 col-lg-6 container">
           <h2>About Us</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
@@ -222,8 +237,8 @@
         </div>
       </div>
       <div class="row bg-dark text-light">
-        <div class="col-12 col-md-6 col-lg-6">
-          <h2>SERVICES</h2>
+        <div class="col-12 col-md-6 col-lg-6 container">
+          <h2 class="container">SERVICES</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
             quo quis quibusdam cumque voluptatibus placeat libero tempora
@@ -242,8 +257,8 @@
           <img src="./images/ppl2.png" height="250px" width="300px" />
         </div>
       </div>
-      <div class="row">
-        <h2>FAQ</h2>
+      <div class="row container">
+        <h2 class="text-center">FAQ</h2>
         <div>
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -345,10 +360,10 @@
           </div>
         </div>
       </div>
-      <div class="row bg-secondary mx-auto container justify-content-center">
+      <div class="row bg-secondary container justify-content-center">
         <div class="col-12">
-          <h2 class="text-center">Our team</h2>
-          <p class="text-center">
+          <h2 class="text-center text-light">Our team</h2>
+          <p class="text-center text-light">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
             eaque perferendis delectus dignissimos qui odio quibusdam molestiae
             officia eius quisquam.
@@ -417,7 +432,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row container">
         <h3 class="text-center">Contact info</h3>
         <div><b>Main Location:</b> 50 Main st Boston MA</div>
         <hr />
@@ -431,7 +446,7 @@
         <hr />
       </div>
     </main>
-    <footer class="row bg-dark">
+    <footer class="row bg-dark container">
       <div class="col-12 col-md-5 col-lg-3 text-light">
         <h3>Logo brand</h3>
         <p>
